@@ -120,5 +120,54 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
     
+     //Preenche o filtro
+
+  function preencherAreas() {
+    const areas = [...new Set(profissao.map((p) => p.area))].sort();
+      areas.forEach((are) => {
+      const option = document.createElement("option");
+      option.value = are;
+      option.textContent = are;
+      elSelectFiltro.appendChild(option);
+    });
+  }
+    
+       // Função para o Buscar
+
+  function buscarProfissoes() {
+    const valorBusca = elTextBuscar.value.toLowerCase().trim();
+
+    if (valorBusca === "") {
+      alert("Preencha o campo. Exibindo todas as profissões.");
+      exibirProfissao(profissao);
+    } else {
+      const encontrados = profissao.filter((p) =>
+        p.titulo.toLowerCase().includes(valorBusca)
+      );
+      exibirProfissao(encontrados);
+    }
+  }
+    
+     // Função para o filtro
+
+  elSelectFiltro.addEventListener("change", function () {
+    const valor = elSelectFiltro.value;
+    if (valor === "todos") {
+      exibirProfissao(profissao);
+    } else {
+      const filtrados = profissao.filter((p) => p.area === valor);
+      exibirProfissao(filtrados);
+    }
+  });
+
+    // Fazer a busca quando o enter for pressionado
+  
+  elTextBuscar.addEventListener("keypress", function (e) {
+    if (e.key === "Enter") {
+      buscarProfissoes();
+    }
+  });
+    
+     preencherAreas();
     exibirProfissao(profissao);
 });
