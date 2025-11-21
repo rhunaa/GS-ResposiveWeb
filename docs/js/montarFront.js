@@ -120,7 +120,8 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
     
-     //Preenche o filtro
+    
+   //Preenche o filtro
 
   function preencherAreas() {
     const areas = [...new Set(profissao.map((p) => p.area))].sort();
@@ -132,7 +133,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
     
-       // Função para o Buscar
+     // Função para o Buscar
 
   function buscarProfissoes() {
     const valorBusca = elTextBuscar.value.toLowerCase().trim();
@@ -147,8 +148,8 @@ document.addEventListener("DOMContentLoaded", function () {
       exibirProfissao(encontrados);
     }
   }
-    
-     // Função para o filtro
+
+    // Função para o filtro
 
   elSelectFiltro.addEventListener("change", function () {
     const valor = elSelectFiltro.value;
@@ -167,7 +168,7 @@ document.addEventListener("DOMContentLoaded", function () {
       buscarProfissoes();
     }
   });
-    
-     preencherAreas();
-    exibirProfissao(profissao);
+
+    preencherAreas();
+  exibirProfissao(profissao);
 });

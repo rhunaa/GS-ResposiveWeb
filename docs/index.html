@@ -1,33 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br" class="">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Human Work</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Human Work 2035 </title>
 
-      <link rel="stylesheet" href="./css/styles.css">
+  <link rel="stylesheet" href="./css/styles.css">
+ 
 </head>
-<body>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors duration-500 font-chakra">
 
- <!-- HEADER -->
-
+  <!-- HEADER -->
   <header class="">
-
     <div class="bg-gradient-to-r from-violet-700 via-indigo-700 to-teal-600 text-white 
                 dark:from-violet-900 dark:via-indigo-900 dark:to-teal-800 py-10 transition">
       <div class="max-w-6xl mx-auto px-6 text-center">
-         <h1 class="text-4xl md:text-5xl font-extrabold font-chakra"> HUMAN WORK 2035 </h1>
-            <p class="mt-3 text-sm md:text-lg opacity-90">O trabalho está mudando. Descubra 40 profissões que unem inteligência artificial, criatividade e propósito. </p>
-       </div>
+        <h1 class="text-4xl md:text-5xl font-extrabold font-chakra"> HUMAN WORK 2035 </h1>
+        <p class="mt-3 text-sm md:text-lg opacity-90">O trabalho está mudando. Descubra 40 profissões que unem inteligência artificial, criatividade e propósito. </p>
+      </div>
     </div>
-
   </header>
 
+
   <!-- FILTROS -->
-
   <section class="max-w-6xl mx-auto px-6 mt-8">
-
     <div class="grid grid-cols-1 md:grid-cols-3 gap-4 items-end">
+      
+      <!-- BUSCA -->
+
       <div class="md:col-span-2">
         <label for="txtBuscar" class="text-sm font-medium mb-1 ">Buscar profissão</label>
         <input id="txtBuscar" type="text" placeholder="Ex: Engenheiro de Ética, Curador de Dados..."
@@ -36,18 +36,21 @@
         />
       </div>
 
-  
+      <!-- SELECT -->
       <div>
         <label for="filtroProfissao" class="text-sm font-medium mb-1 ">Filtrar por área</label>
-        <select id="filtroProfissao" class="w-full rounded-xl px-4 py-3 bg-violet-700 text-white 
+        <select 
+          id="filtroProfissao" 
+          class="w-full rounded-xl px-4 py-3 bg-violet-700 text-white 
                  dark:bg-violet-600 dark:text-gray-100 shadow-md transition">
           <option value="todos">Todas as áreas</option>
         </select>
       </div>
+
     </div>
   </section>
 
-   <!-- GRID -->
+  <!-- GRID -->
   <main class="max-w-6xl mx-auto px-6 mt-12 pb-20">
     <div id="gridProfissao" class="flex flex-col gap-10"></div>
   </main>
@@ -63,11 +66,10 @@
       <span class="font-medium">Modo</span>
     </button>
   </div>
- 
+
 
   <script type="module" src="./js/montarFront.js"></script>
   <script type="module" src="./js/darkmode.js"></script>
-
 
 </body>
 </html>
