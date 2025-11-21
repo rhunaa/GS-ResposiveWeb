@@ -1,18 +1,18 @@
-NOME E RM DOS INTEGRANTES:
+## NOME E RM DOS INTEGRANTES:
 
 Bruna Pereira Cordeiro — RM: 563153
 Lucas Simões Silva — RM: 561436
 Milena Beck Speria — RM: 565077
 Isabella Tragante de Siqueira — RM: 563973
 
-LINK DO REPOSITÓRIO:
+## LINK DO REPOSITÓRIO:
 https://github.com/rhunaa/GS-ResposiveWeb.git
 
 LINK DO GITHUB PAGES: https://rhunaa.github.io/ResposiveeWeb/
 
 ** Professor, eu alterei o nome da dist para docs, porque estava dando erro no Github Pages, onde o mesmo não consguia identificar a pasta dist para fazer o deploy **
 
-SOBRE O TRABALHO: 
+## SOBRE O TRABALHO: 
 
 Este projeto apresenta 40 profissões do futuro, explorando carreiras que podem se tornar comuns nos próximos anos. A página permite que o usuário busque e filtre profissões, mostrando informações sobre descrição, competências e média salarial de cada uma.
 
@@ -30,3 +30,18 @@ O objetivo do trabalho foi praticar:
  - Criação de interface dinâmica com JavaScript
  - Uso de Tailwind CSS
  - Organização de projeto e deploy no GitHub Pages
+
+## Como rodar esse projeto vindo do GItHub
+
+Depois de ter clonado o repositório, siga estes passos:
+
+1. Instale as dependências do projeto:
+npm install
+
+2.Instale o Tailwind e o CLI (caso ainda não estejam instalados)
+npm install tailwindcss @tailwindcss/cli
+
+3.Inicie o Tailwind em modo desenvolvimento
+npm run dev
+
+Concluído!!
